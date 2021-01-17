@@ -1,38 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/d252aaa1a4.js" crossorigin="anonymous"></script>
+    <title>Carousel Gallery Slider</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-    <div class="carousel">
-        <i class="fas fa-angle-left" id="prevBtn"></i>
-        <i class="fas fa-angle-right" id="nextBtn"></i>
-
-      <div class="carousel-slide">
-        <img src="images/img5.jpg" id="lastclone" alt="Image">
-        <img src="images/img1.jpg" alt="Image">
-        <img src="images/img2.jpg" alt="Image">
-        <img src="images/img3.jpg" alt="Image">
-        <img src="images/img4.jpg" alt="Image">
-        <img src="images/img5.jpg" alt="Image">
-        <img src="images/img1.jpg" id="firstclone" alt="Image">
-      </div>
-
-      <div class="button">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-      </div>
-
+<div class="carousel-container">
+    <div class="slideShowContainer">
+            <img src="images/img1.jpg">
+            <img src="images/img2.jpg">
+            <img src="images/img3.jpg">
+            <img src="images/img4.jpg">
     </div>
-    
-    <script src="js/index.js"></script>  
 
+    <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+    <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+</div>
+
+<div id="dotsContainer"></div>
+
+<script src="js/myScript.js"></script>
 </body>
 </html>
